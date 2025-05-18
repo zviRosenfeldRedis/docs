@@ -185,7 +185,7 @@ rladmin migrate [ db { db:<id> | <name> } ]
             endpoint_to_shards
             [ restrict_target_node <id> ]
             [ commit ]
-            [ max_concurrent_bdb_migrations <value> ]
+            [ max_concurrent_migrations <value> ]
 ```
 
 ### Parameters
@@ -195,7 +195,7 @@ rladmin migrate [ db { db:<id> | <name> } ]
 | db                            | db:\<id\><br /> name   | Limits migration to a specific database                                           |
 | restrict_target_node          | integer | Moves the endpoint only if the target node matches the specified node |
 | commit                        |                        | Performs endpoint movement                                                      |
-| max_concurrent_bdb_migrations | integer                | Sets the maximum number of concurrent endpoint migrations                           |
+| max_concurrent_migrations | integer                | Sets the maximum number of concurrent endpoint migrations                           |
 
 
 ### Returns
